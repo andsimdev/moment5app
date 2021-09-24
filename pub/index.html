@@ -10,40 +10,53 @@
 </head>
 
 <body>
-    <section class="coursesection">
-        <h1>Kurser jag läst</h1>
+    <main>
+        <section class="coursesection">
+            <h1>Kurser jag läst</h1>
 
-        <table>
-            <tr>
-                <th>Kurskod</th>
-                <th>Kursnamn</th>
-                <th>Kursprogression</th>
-                <th>Kursplan</th>
-            </tr>
-            <tr>
-                <td>1234</td>
-                <td>Testrad</td>
-                <td>A</td>
-                <td>www</td>
-            </tr>
-        </table>
+            <table>
+                <tr>
+                    <th class="w1">Kurskod</th>
+                    <th class="w2">Kursnamn</th>
+                    <th class="w1">Progression</th>
+                    <th class="w1">Kursplan</th>
+                </tr>
+                <tr>
+                    <td>1234</td>
+                    <td>Testrad</td>
+                    <td>A</td>
+                    <td>www</td>
+                </tr>
+                <tr>
+                    <td>1234</td>
+                    <td>Testrad</td>
+                    <td>A</td>
+                    <td>www</td>
+                </tr>
+            </table>
+        </section>
 
-    </section>
+        <section class="addcoursesection">
+            <h2>Lägg till kurs</h2>
 
-    <section class="addcoursesection">
-        <h2>Lägg till kurs</h2>
-
-        <form action="post">
-            <input type="text" placeholder="Kurskod">
-            <input type="text" placeholder="Kursnamn">
-            <input type="text" placeholder="Progression">
-            <input type="text" placeholder="Länk till kursplan">
-            <input type="submit" value="Spara">
-        </form>
-    </section>
+            <form action="post">
+                <div>
+                    <input type="text" placeholder="Kurskod" class="width1">
+                    <input type="text" placeholder="Kursnamn" class="width2">
+                </div>
+                <br>
+                <div>
+                    <input type="text" placeholder="Progression" class="width1">
+                    <input type="text" placeholder="Länk till kursplan" class="width2">
+                </div>
+                <br>
+                <input type="submit" value="Spara" id="savebtn">
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>Webbutveckling III</p>
+        <p>Webbutveckling III, moment 5</p>
         <p>Av Simon Andersson, HT 2021</p>
     </footer>
 

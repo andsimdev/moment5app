@@ -1,0 +1,32 @@
+// Importera typsnitt
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+$background-color: #EEEEEE;
+
+$text-color: #434343;
+
+$prim-color: #9ADAFF;
+
+h1, h2, h3, h4, h5, h6 {
+    color: $text-color;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+p {
+    color: $text-color;
+}
+
+// Klass för smalare bredd
+.w1 {
+    width: 20%;
+}
+
+// Klass för bredare bredd
+.w2 {
+    width: 40%;
+}

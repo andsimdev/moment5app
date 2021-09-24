@@ -33,15 +33,15 @@
         <section class="addcoursesection">
             <h2>Lägg till kurs</h2>
 
-            <form action="post">
+            <form>
                 <div>
-                    <input type="text" placeholder="Kurskod" class="width1">
-                    <input type="text" placeholder="Kursnamn" class="width2">
+                    <input type="text" placeholder="Kurskod" class="width1" id="coursecode" name="coursecode" required>
+                    <input type="text" placeholder="Kursnamn" class="width2" id="coursename" name="coursename" required>
                 </div>
                 <br>
                 <div>
-                    <input type="text" placeholder="Progression" class="width1">
-                    <input type="text" placeholder="Länk till kursplan" class="width2">
+                    <input type="text" placeholder="Progression" class="width1" id="progression" name="progression" required>
+                    <input type="text" placeholder="Länk till kursplan" class="width2" id="coursesyllabus" name="coursesyllabus" required>
                 </div>
                 <br>
                 <input type="submit" value="Spara" id="savebtn">

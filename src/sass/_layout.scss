@@ -32,6 +32,8 @@ main {
     background-color: $prim-color;
     border-radius: 25px;
     padding: 25px 60px;
+    padding-bottom: 75px;
+    margin-bottom: 150px;
 
     form {
         width: 100%;
@@ -57,14 +59,15 @@ main {
             background-color: greenyellow;
             font-weight: 500;
             min-width: 100px;
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }
 
 footer {
     display: flex;
-    position: absolute;
-    bottom: 0;
     justify-content: space-evenly;
     width: 100%;
     height: 35px;

@@ -1,2 +1,2 @@
-"use strict";var user="Simon",test=function(){console.log("Hej")};
+"use strict";var tableEl=document.getElementById("table");function printCourses(){fetch("http://localhost/webbutveckling3/moment5/rest.php").then((function(t){return t.json()})).then((function(t){t.forEach((function(t){tableEl.innerHTML+="\n            <tr>\n            <td>".concat(t.coursecode,"</td>\n            <td>").concat(t.coursename,"</td>\n            <td>").concat(t.progression,"</td>\n            <td>").concat(t.coursesyllabus,"</td>\n            <tr>\n            ")}))}))}window.onload=printCourses();
 //# sourceMappingURL=../maps/main.js.map

@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.js"],"names":["user","test","console","log"],"mappings":"AAAA,aACA,IAAIA,KAAO,QAGPC,KAAO,WACPC,QAAQC,IAAI","file":"../js/main.js","sourcesContent":["// Skapa användare\r\nlet user = \"Simon\";\r\n\r\n// Skapa funktion som skriver ut hej i konsolen\r\nlet test = () => {\r\n    console.log(\"Hej\");\r\n}"]}

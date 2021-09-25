@@ -1,5 +1,6 @@
 // GLOBALA VARIABLER
-const url = 'http://localhost/webbutveckling3/moment5/rest.php';
+// Länk till webbtjänstens URL
+const url = 'https://studenter.miun.se/~sian2001/dt173g/moment5/rest.php';
 
 // HÄMTA IN HTML-ELEMENT
 const tableEl = document.getElementById("table");
@@ -37,7 +38,7 @@ function printCourses() {
     fetch(url)
         .then((res) => res.json())
         .then((data) => {
-            // Loopa ut allt innehåll i arrayen till tabellen
+            // Loopa ut allt innehåll till tabellen
             data.forEach(course => {
                 tableEl.innerHTML +=
                     `

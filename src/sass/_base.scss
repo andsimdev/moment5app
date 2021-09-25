@@ -6,12 +6,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+// Ange variabler för färger
 $background-color: #EEEEEE;
 
 $text-color: #434343;
 
 $prim-color: #9ADAFF;
 
+// Format för rubriker och text
 h1, h2, h3, h4, h5, h6 {
     color: $text-color;
     margin-bottom: 45px;

@@ -1,3 +1,4 @@
+// Inställningar för hela sidan
 body {
     display: flex;
     flex-direction: column;
@@ -5,6 +6,7 @@ body {
     background-color: $background-color;
 }
 
+// Huvudfönstret för innehåll, centrerat och med max-bredd
 main {
     max-width: 800px;
     width: 100%;
@@ -13,6 +15,7 @@ main {
     min-height: 100vh;
 }
 
+// Sektionen som visar kurser
 .coursesection {
     width: 100%;
     margin-bottom: 75px;
@@ -27,6 +30,7 @@ main {
     }
 }
 
+// Sektionen för att lägga till kurser
 .addcoursesection {
     width: 100%;
     background-color: $prim-color;
@@ -66,6 +70,7 @@ main {
     }
 }
 
+// Sidfot
 footer {
     display: flex;
     justify-content: space-evenly;

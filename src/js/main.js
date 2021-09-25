@@ -14,11 +14,8 @@ const deleteBtnEl = document.getElementById("deletebtn");
 // Då fönstret laddat, kör funktionen för att skriva ut alla kurser
 window.onload = printCourses();
 
-// Vid klick på submit-knappen i formuläret, kör funktion för att spara ny kurs
-submitbtnEl.addEventListener("click", function (event) {
-    event.preventDefault();
-    saveCourse();
-});
+// Vid klick på submit-knappen i formuläret, kör funktion för att spara ny kur
+submitbtnEl.addEventListener("click", saveCourse);
 
 // FUNKTIONER
 // Hämta och skriv ut alla kurser
@@ -44,7 +41,7 @@ function printCourses() {
             <td>${course.coursecode}</td>
             <td>${course.coursename}</td>
             <td>${course.progression}</td>
-            <td>${course.coursesyllabus}</td>
+            <td><a href="${course.coursesyllabus}">Kursplan ${course.coursecode}</a></td>
             <tr>
             `
             });

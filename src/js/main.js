@@ -8,14 +8,18 @@ const coursecodeinputEl = document.getElementById("coursecode");
 const coursenameinputEl = document.getElementById("coursename");
 const progressioninputEl = document.getElementById("progression");
 const coursesyllabusEl = document.getElementById("coursesyllabus");
-const deleteBtnEl = document.getElementById("deletebtn");
+const formEl = document.getElementById("form");
 
 // EVENTHANTERARE
 // Då fönstret laddat, kör funktionen för att skriva ut alla kurser
 window.onload = printCourses();
 
-// Vid klick på submit-knappen i formuläret, kör funktion för att spara ny kur
-submitbtnEl.addEventListener("click", saveCourse);
+// Vid klick på submit-knappen i formuläret, kör funktion för att spara ny kurs
+// Förhindra omladdning av webbläsarfönstret
+submitbtnEl.addEventListener("click", function (event) {
+    event.preventDefault();
+    saveCourse();
+});
 
 // FUNKTIONER
 // Hämta och skriv ut alla kurser
@@ -74,6 +78,8 @@ function saveCourse() {
     .then(json => {
         console.log(json);
         printCourses();
+        // Rensa formuläret
+        formEl.reset();
     })
     // Fånga eventuella fel och skriv ut
     .catch(error => console.log(error));
